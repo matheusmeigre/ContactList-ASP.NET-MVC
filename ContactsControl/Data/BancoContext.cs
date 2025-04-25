@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ContactsControl.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,5 +13,7 @@ namespace ContactsControl.Data
         { 
         
         }
+
+        public DbSet<ContactModel> Contacts { get; set; }
     }
 }
