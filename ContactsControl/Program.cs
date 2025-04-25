@@ -1,5 +1,6 @@
 using System;
 using ContactsControl.Data;
+using ContactsControl.Repositorio;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,9 +9,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<BancoContext>(options =>
-    options.UseMySql(
-        builder.Configuration.GetConnectionString("DefaultConnection"),
-        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))));
+    options.UseMySQL(
+        builder.Configuration.GetConnectionString("DataBase")!));
+builder.Services.AddScoped<IRepositoryContact, RepositoryContact>();
+
+
+
 
 
 var app = builder.Build();
