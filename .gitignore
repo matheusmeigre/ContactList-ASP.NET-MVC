@@ -1,0 +1,53 @@
+## Ignore arquivos de build e temporários ##
+bin/
+obj/
+
+## Ignorar arquivos do Visual Studio ##
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Ignorar arquivos de publicação ##
+*.publish.xml
+
+## Ignorar pacotes NuGet (exceto o arquivo de config) ##
+packages/
+!packages/repositories.config
+
+## Logs ##
+*.log
+
+## Ignorar configurações do IIS Express ##
+.vsconfig
+*.dbmdl
+*.pidb
+*.svclog
+*.sdf
+
+## Arquivos do Rider/ReSharper ##
+.idea/
+*.DotSettings.user
+
+## Ignorar arquivos gerados por ferramentas de testes ##
+TestResults/
+*.nunit.xml
+*.coverage
+*.coveragexml
+
+## Ignorar arquivos de cache e temporários ##
+*.cache
+*.tmp
+*.bak
+
+## Ignorar arquivos de configuração locais ##
+appsettings.Development.json
+secrets.json
+.env
+
+## Ignorar arquivos de migração EF desnecessários (opcional) ##
+Migrations/
+
+## Ignorar diretórios de publicação ##
+publish/
