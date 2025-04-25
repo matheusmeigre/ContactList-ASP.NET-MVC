@@ -8,5 +8,20 @@ namespace ContactsControl.Controllers
         {
             return View();
         }
+
+        public IActionResult CreateContact()
+        {
+            return View();
+        }
+
+        public IActionResult EditContact()
+        {
+            return View();
+        }
+
+        public IActionResult RemoveContact()
+        {
+            return View();
+        }
     }
 }
