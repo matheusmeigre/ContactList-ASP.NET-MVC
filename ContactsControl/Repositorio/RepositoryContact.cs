@@ -11,6 +11,11 @@ namespace ContactsControl.Repositorio
             _bancoContext = bancoContext;
         }
 
+        public List<ContactModel> ChangeAll()
+        {
+            return _bancoContext.Contacts.ToList();
+        }
+
         public ContactModel Add(ContactModel contact)
         {
             _bancoContext.Contacts.Add(contact);

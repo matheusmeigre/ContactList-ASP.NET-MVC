@@ -13,7 +13,8 @@ namespace ContactsControl.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            List<ContactModel> contacts = _repositoryContact.ChangeAll();
+            return View(contacts);
         }
 
         public IActionResult CreateContact()
