@@ -19,7 +19,7 @@ namespace ContactsControl.Controllers
             return View();
         }
 
-        public IActionResult RemoveContact()
+        public IActionResult RemoveContactConfirmation()
         {
             return View();
         }
