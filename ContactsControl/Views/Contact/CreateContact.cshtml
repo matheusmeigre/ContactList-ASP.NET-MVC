@@ -6,5 +6,24 @@
 
     <h1 class="display-4">Cadastrar contato</h1> <br />
 
-
 </div>
+
+<form>
+    <div class="mb-3">
+        <label for="name">Nome</label>
+        <input type="text" class="form-control" placeholder="Digite o nome do contato">
+    </div>
+    <div class="mb-3">
+        <label for="email">E-mail</label>
+        <input type="email" class="form-control" placeholder="Digite o email do contato">
+    </div>
+    <div class="mb-3">
+        <label for="cell">Celular</label>
+        <input type="text" class="form-control" placeholder="Digite o celular do contato">
+    </div>
+    <div id="emailHelp" class="form-text mb-3">Nós nunca compartilharemos seus dados com ninguém!</div>
+    <div class="d-grid gap-2">
+        <button type="submit" class="btn btn-primary btn">Cadastrar</button>
+        <a class="btn btn-secondary" asp-controller="Contact" asp-action="Index" role="button">Voltar</a>
+    </div>
+</form>
